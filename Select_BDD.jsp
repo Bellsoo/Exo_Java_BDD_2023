@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
 
@@ -111,7 +110,6 @@ if (idFilmAModifier != null && !idFilmAModifier.isEmpty() && nouveauTitre != nul
     <br>
     <input type="submit" value="Ajouter Film">
 </form>
-
 <%
 String titreFilm = request.getParameter("titre");
 String anneeFilm = request.getParameter("anneeFilm");
