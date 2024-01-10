@@ -15,6 +15,7 @@
     <%-- Récupération des valeurs --%>
     <% String valeur1 = request.getParameter("valeur1"); %>
     <% String valeur2 = request.getParameter("valeur2"); %>
+ 	    @@ -28,21 +30,60 @@
 
     <%-- Vérification de la condition entre les deux valeurs --%>
     <% if (valeur1 != null && valeur2 != null) { %>
@@ -44,7 +45,7 @@
     <% String valeurA = request.getParameter("valeurA"); %>
     <% String valeurB = request.getParameter("valeurB"); %>
     <% String valeurC = request.getParameter("valeurC"); %>
-
+         @@ -76,4 +86,4 @@
     <%-- Vérification de la condition entre les trois valeurs --%>
     <% if (valeurA != null && valeurB != null && valeurC != null) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
