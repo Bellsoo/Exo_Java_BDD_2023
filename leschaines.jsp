@@ -94,7 +94,7 @@ Lhvrsr lvex</p>
     <%= chaine.charAt(i) %>
 <% } %>
 
-<h2>Exercice 5 : La phrase en verlan</h2>
+<h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlan </br>
 Exemple : L'hiver sera pluvieux</br>
 xueivulp ares revih'l</p>
