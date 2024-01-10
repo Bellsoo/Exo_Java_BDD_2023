@@ -15,13 +15,24 @@
     <%-- Récupération des valeurs --%>
     <% String valeur1 = request.getParameter("valeur1"); %>
     <% String valeur2 = request.getParameter("valeur2"); %>
+ 	    @@ -28,21 +30,60 @@
 
-	@@ -28,21 +30,60 @@
+    <%-- Vérification de la condition entre les deux valeurs --%>
+    <% if (valeur1 != null && valeur2 != null) { %>
+        <%-- Conversion des valeurs en entiers pour la comparaison --%>
+        <% int intValeur1 = Integer.parseInt(valeur1); %>
+        <% int intValeur2 = Integer.parseInt(valeur2); %>
+        
+        <%-- Condition if pour comparer les valeurs --%>
+        <% if (intValeur1 > intValeur2) { %>
+            <p>Valeur 1 est supérieure à Valeur 2.</p>
+        <% } else if (intValeur1 < intValeur2) { %>
+            <p>Valeur 1 est inférieure à Valeur 2.</p>
         <% } else { %>
             <p>Valeur 1 est égale à Valeur 2.</p>
         <% } %>
     <% } %>
-
+    
     <h2>Exercice 1 : Comparaison 1</h2>
     <form action="#" method="post">
         <p>Saisir la valeur A : <input type="text" id="inputValeurA" name="valeurA"></p>
@@ -34,7 +45,7 @@
     <% String valeurA = request.getParameter("valeurA"); %>
     <% String valeurB = request.getParameter("valeurB"); %>
     <% String valeurC = request.getParameter("valeurC"); %>
-
+         @@ -76,4 +86,4 @@
     <%-- Vérification de la condition entre les trois valeurs --%>
     <% if (valeurA != null && valeurB != null && valeurC != null) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
